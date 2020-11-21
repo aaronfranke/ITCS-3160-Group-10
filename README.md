@@ -44,7 +44,7 @@ Jai Tabora
 
 ## Data Dictionary
 
-[Data Dictionary](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/images/Group10_DataDictionary_deliverable2.pdf)
+[Data Dictionary](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/pdf/Group10_DataDictionary_deliverable2.pdf)
 
 ## MySQL Queries
 
