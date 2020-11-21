@@ -36,7 +36,7 @@ Jai Tabora
 6. A customer can rate the delivery only one time per order.
 7. A customer can rate the restaurant only one time per order.
 8. Administrators can view driver ratings.
-9. The ratings will be based on a 5-star rating system.
+9. The ratings will be based on a 5 level rating system.
 
 ## EERD (full database)
 
