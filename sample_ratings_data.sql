@@ -25,8 +25,8 @@ CREATE TABLE `ratings` (
 
 LOCK TABLES `ratings` WRITE;
 /* !40000 ALTER TABLE `ratings` DISABLE KEYS */
-INSERT INTO `ratings` (`rating_id`,`order_id`,`driver_rating`,`restaurant_rating`,`driver_comment`,`restaurant_comment`) 
-VALUES 
+INSERT INTO `ratings` (`rating_id`,`order_id`,`driver_rating`,`restaurant_rating`,`driver_comment`,`restaurant_comment`)
+VALUES
 (1,1,2,2,"quam a felis ullamcorper viverra. Maecenas iaculis aliquet diam. Sed diam lorem,","augue ac ipsum. Phasellus vitae mauris sit amet lorem semper auctor. Mauris vel turpis. Aliquam adipiscing"),
 (2,2,5,5,"vel, vulputate eu, odio. Phasellus at augue id ante dictum cursus. Nunc mauris elit, dictum eu, eleifend nec, malesuada","Nunc ut erat. Sed nunc est, mollis non, cursus non, egestas a, dui. Cras pellentesque. Sed dictum."),
 (3,3,2,5,"augue porttitor interdum. Sed auctor odio","ligula. Aliquam erat volutpat. Nulla dignissim."),
@@ -129,5 +129,3 @@ VALUES
 (100,100,2,4,"Proin mi. Aliquam gravida mauris","interdum enim non nisi. Aenean eget");
 /* !40000 ALTER TABLE `ratings` ENABLE KEYS */;
 UNLOCK TABLES;
-
-
