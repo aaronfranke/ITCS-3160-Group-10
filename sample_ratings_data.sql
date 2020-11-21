@@ -1,0 +1,133 @@
+--
+-- Table structure for table `ratings`
+--
+
+DROP TABLE IF EXISTS `ratings`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ratings` (
+  `rating_id` int NOT NULL AUTO_INCREMENT,
+  `order_id` int NOT NULL,
+  `driver_rating` int DEFAULT NULL,
+  `restaurant_rating` int DEFAULT NULL,
+  `driver_comment` varchar(1000) DEFAULT NULL,
+  `restaurant_comment` varchar(1000) DEFAULT NULL,
+  PRIMARY KEY (`rating_id`),
+  UNIQUE KEY `rating_id_UNIQUE` (`rating_id`),
+  KEY `order_id_idx` (`order_id`),
+  CONSTRAINT `order_id` FOREIGN KEY (`order_id`) REFERENCES `order` (`order_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ratings`
+--
+
+LOCK TABLES `ratings` WRITE;
+/* !40000 ALTER TABLE `ratings` DISABLE KEYS */
+INSERT INTO `ratings` (`rating_id`,`order_id`,`driver_rating`,`restaurant_rating`,`driver_comment`,`restaurant_comment`) 
+VALUES 
+(1,1,2,2,"quam a felis ullamcorper viverra. Maecenas iaculis aliquet diam. Sed diam lorem,","augue ac ipsum. Phasellus vitae mauris sit amet lorem semper auctor. Mauris vel turpis. Aliquam adipiscing"),
+(2,2,5,5,"vel, vulputate eu, odio. Phasellus at augue id ante dictum cursus. Nunc mauris elit, dictum eu, eleifend nec, malesuada","Nunc ut erat. Sed nunc est, mollis non, cursus non, egestas a, dui. Cras pellentesque. Sed dictum."),
+(3,3,2,5,"augue porttitor interdum. Sed auctor odio","ligula. Aliquam erat volutpat. Nulla dignissim."),
+(4,4,1,1,"tristique pharetra. Quisque ac libero nec ligula consectetuer rhoncus. Nullam velit dui, semper et, lacinia vitae, sodales at,","pellentesque a, facilisis non, bibendum sed, est. Nunc"),
+(5,5,4,2,"luctus et ultrices posuere cubilia Curae; Donec tincidunt. Donec vitae erat vel pede blandit congue.","Nunc quis arcu vel quam dignissim pharetra. Nam ac nulla. In tincidunt congue turpis. In condimentum. Donec at"),
+(6,6,5,2,"urna. Nullam lobortis quam a felis ullamcorper viverra. Maecenas iaculis aliquet diam.","imperdiet, erat nonummy ultricies ornare, elit elit fermentum risus, at fringilla purus mauris a nunc. In at pede. Cras vulputate"),
+(7,7,1,1,"Cras dolor dolor, tempus non, lacinia at, iaculis quis, pede. Praesent eu dui. Cum sociis natoque","diam dictum sapien. Aenean massa. Integer vitae nibh. Donec est mauris, rhoncus id,"),
+(8,8,1,1,"imperdiet, erat nonummy ultricies ornare, elit elit fermentum risus, at fringilla purus mauris a nunc. In","auctor, nunc nulla vulputate dui, nec tempus mauris erat eget ipsum. Suspendisse sagittis. Nullam vitae"),
+(9,9,4,1,"Nunc ut erat. Sed nunc est, mollis non, cursus non, egestas","ut eros non enim commodo hendrerit. Donec porttitor tellus non magna. Nam"),
+(10,10,2,5,"facilisis vitae, orci. Phasellus dapibus quam quis diam. Pellentesque habitant morbi tristique senectus et netus et","In lorem. Donec elementum, lorem"),
+(11,11,5,5,"urna convallis erat, eget tincidunt dui augue eu","ultrices iaculis odio. Nam interdum enim non nisi. Aenean"),
+(12,12,4,5,"mauris erat eget ipsum. Suspendisse","semper egestas, urna justo faucibus lectus, a sollicitudin orci sem"),
+(13,13,1,1,"erat vel pede blandit congue. In scelerisque scelerisque dui. Suspendisse ac metus","tristique pharetra. Quisque ac libero nec ligula consectetuer rhoncus. Nullam velit dui, semper et, lacinia vitae,"),
+(14,14,5,5,"mi eleifend egestas. Sed pharetra, felis eget varius ultrices, mauris","Curae; Phasellus ornare. Fusce mollis. Duis"),
+(15,15,3,5,"lacus. Aliquam rutrum lorem ac risus. Morbi metus. Vivamus euismod urna. Nullam","augue scelerisque mollis. Phasellus libero mauris, aliquam eu, accumsan sed, facilisis vitae, orci."),
+(16,16,3,4,"augue ac ipsum. Phasellus vitae mauris sit amet lorem semper auctor. Mauris vel turpis. Aliquam adipiscing","sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus"),
+(17,17,3,3,"nonummy ut, molestie in, tempus eu, ligula. Aenean euismod mauris eu elit. Nulla facilisi. Sed neque. Sed","vestibulum, neque sed dictum eleifend, nunc risus varius orci, in consequat enim diam vel arcu. Curabitur ut odio vel est"),
+(18,18,5,3,"ligula tortor, dictum eu, placerat eget, venenatis a, magna. Lorem ipsum dolor sit","In ornare sagittis felis. Donec tempor, est ac mattis semper, dui"),
+(19,19,2,1,"magna sed dui. Fusce aliquam, enim nec tempus scelerisque, lorem","at lacus. Quisque purus sapien, gravida non, sollicitudin a,"),
+(20,20,4,4,"in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus ornare.","nunc id enim. Curabitur massa. Vestibulum accumsan neque et nunc. Quisque ornare tortor at risus. Nunc"),
+(21,21,4,5,"dui. Cras pellentesque. Sed dictum. Proin eget odio. Aliquam vulputate ullamcorper magna. Sed eu eros. Nam consequat dolor","egestas. Sed pharetra, felis eget"),
+(22,22,5,1,"auctor vitae, aliquet nec, imperdiet nec, leo. Morbi neque tellus, imperdiet non, vestibulum","iaculis quis, pede. Praesent eu dui. Cum sociis"),
+(23,23,5,1,"mauris, aliquam eu, accumsan sed, facilisis vitae, orci. Phasellus dapibus quam quis diam. Pellentesque","viverra. Maecenas iaculis aliquet diam. Sed diam"),
+(24,24,4,1,"et netus et malesuada fames","arcu. Morbi sit amet massa. Quisque porttitor eros nec tellus."),
+(25,25,3,5,"sem eget massa. Suspendisse eleifend. Cras sed leo. Cras vehicula aliquet libero. Integer in magna. Phasellus dolor elit,","in, cursus et, eros. Proin ultrices. Duis volutpat nunc sit"),
+(26,26,3,2,"Donec egestas. Aliquam nec enim. Nunc ut erat.","semper pretium neque. Morbi quis urna. Nunc quis arcu vel quam dignissim pharetra. Nam ac"),
+(27,27,1,3,"risus. Nunc ac sem ut dolor","bibendum ullamcorper. Duis cursus, diam at"),
+(28,28,1,3,"rhoncus. Proin nisl sem, consequat nec, mollis vitae, posuere at, velit. Cras lorem lorem,","urna. Vivamus molestie dapibus ligula. Aliquam erat volutpat. Nulla dignissim. Maecenas ornare egestas ligula. Nullam feugiat placerat velit. Quisque varius."),
+(29,29,2,3,"neque pellentesque massa lobortis ultrices. Vivamus rhoncus. Donec est. Nunc ullamcorper, velit in","Donec fringilla. Donec feugiat metus sit amet"),
+(30,30,3,5,"non dui nec urna suscipit nonummy. Fusce fermentum fermentum arcu. Vestibulum ante ipsum primis in faucibus orci luctus et","sodales. Mauris blandit enim consequat purus. Maecenas libero est, congue a, aliquet"),
+(31,31,2,2,"lorem eu metus. In lorem. Donec elementum, lorem ut aliquam iaculis, lacus pede sagittis augue,","semper auctor. Mauris vel turpis. Aliquam adipiscing lobortis risus. In mi pede, nonummy ut, molestie in, tempus eu, ligula."),
+(32,32,2,4,"sodales purus, in molestie tortor nibh sit amet orci. Ut sagittis lobortis mauris.","egestas a, dui. Cras pellentesque. Sed dictum. Proin"),
+(33,33,3,2,"nec tellus. Nunc lectus pede, ultrices a, auctor non, feugiat nec, diam. Duis mi enim,","lobortis augue scelerisque mollis. Phasellus libero mauris, aliquam eu, accumsan sed, facilisis vitae, orci. Phasellus dapibus quam quis diam."),
+(34,34,1,5,"Mauris nulla. Integer urna. Vivamus molestie dapibus ligula. Aliquam erat volutpat. Nulla dignissim. Maecenas ornare egestas","sodales elit erat vitae risus. Duis a mi fringilla mi lacinia mattis. Integer eu"),
+(35,35,2,4,"vel pede blandit congue. In scelerisque scelerisque dui. Suspendisse ac metus vitae velit egestas lacinia.","Donec tempor, est ac mattis semper, dui lectus rutrum urna, nec luctus felis purus"),
+(36,36,1,4,"Nam interdum enim non nisi. Aenean eget metus. In nec","semper pretium neque. Morbi quis urna. Nunc quis"),
+(37,37,3,5,"Etiam ligula tortor, dictum eu, placerat eget, venenatis a, magna.","Vivamus rhoncus. Donec est. Nunc ullamcorper, velit in aliquet lobortis, nisi nibh"),
+(38,38,1,1,"ipsum non arcu. Vivamus sit amet risus. Donec egestas. Aliquam nec enim.","vel sapien imperdiet ornare. In faucibus. Morbi vehicula. Pellentesque tincidunt tempus risus. Donec egestas. Duis ac"),
+(39,39,2,4,"Nulla interdum. Curabitur dictum. Phasellus in felis. Nulla tempor augue ac ipsum. Phasellus vitae mauris sit amet lorem semper auctor.","blandit at, nisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur"),
+(40,40,4,1,"augue, eu tempor erat neque non quam. Pellentesque habitant morbi tristique senectus et netus et malesuada","hendrerit consectetuer, cursus et, magna. Praesent interdum ligula eu enim. Etiam imperdiet dictum magna. Ut tincidunt orci quis lectus. Nullam"),
+(41,41,2,3,"lacinia. Sed congue, elit sed consequat auctor,","luctus et ultrices posuere cubilia Curae; Donec tincidunt. Donec"),
+(42,42,1,2,"cubilia Curae; Donec tincidunt. Donec vitae erat vel pede blandit congue. In scelerisque scelerisque dui. Suspendisse ac metus","Proin ultrices. Duis volutpat nunc sit amet metus. Aliquam erat volutpat. Nulla facilisis. Suspendisse commodo tincidunt nibh."),
+(43,43,3,5,"pede. Cras vulputate velit eu sem. Pellentesque ut ipsum ac","ac facilisis facilisis, magna tellus"),
+(44,44,1,4,"nunc id enim. Curabitur massa. Vestibulum","quis diam luctus lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos."),
+(45,45,1,4,"nec urna et arcu imperdiet","feugiat non, lobortis quis, pede. Suspendisse dui. Fusce"),
+(46,46,5,2,"sapien, cursus in, hendrerit consectetuer, cursus et, magna. Praesent interdum ligula eu","Quisque tincidunt pede ac urna. Ut tincidunt vehicula risus. Nulla eget metus eu erat"),
+(47,47,4,4,"accumsan laoreet ipsum. Curabitur consequat, lectus","dis parturient montes, nascetur ridiculus mus. Proin vel arcu eu odio tristique pharetra. Quisque ac libero nec"),
+(48,48,5,2,"velit eget laoreet posuere, enim nisl elementum purus, accumsan","sit amet ultricies sem magna nec quam. Curabitur vel lectus. Cum sociis natoque"),
+(49,49,3,5,"Morbi quis urna. Nunc quis arcu vel quam dignissim pharetra. Nam ac nulla. In tincidunt congue turpis.","Quisque imperdiet, erat nonummy ultricies ornare, elit elit fermentum"),
+(50,50,3,1,"mi. Duis risus odio, auctor vitae, aliquet nec, imperdiet nec, leo. Morbi neque tellus, imperdiet non, vestibulum","et, magna. Praesent interdum ligula eu enim. Etiam imperdiet dictum magna. Ut tincidunt orci quis lectus. Nullam suscipit, est"),
+(51,51,1,3,"erat. Vivamus nisi. Mauris nulla. Integer urna.","ligula. Nullam enim. Sed nulla ante, iaculis"),
+(52,52,5,1,"odio a purus. Duis elementum,","ultricies adipiscing, enim mi tempor lorem, eget mollis lectus pede et risus. Quisque libero lacus,"),
+(53,53,3,4,"Donec nibh enim, gravida sit amet, dapibus id, blandit at, nisi. Cum sociis natoque penatibus et magnis","Curabitur vel lectus. Cum sociis natoque penatibus et magnis dis parturient montes,"),
+(54,54,4,1,"quis arcu vel quam dignissim pharetra. Nam","pellentesque a, facilisis non, bibendum sed, est. Nunc laoreet lectus"),
+(55,55,2,4,"Vivamus rhoncus. Donec est. Nunc","vel est tempor bibendum. Donec felis orci, adipiscing non, luctus sit amet, faucibus ut, nulla. Cras"),
+(56,56,3,2,"dolor sit amet, consectetuer adipiscing elit. Aliquam auctor, velit eget laoreet posuere, enim nisl elementum purus, accumsan interdum","orci lobortis augue scelerisque mollis. Phasellus libero mauris, aliquam eu, accumsan sed, facilisis vitae, orci. Phasellus dapibus"),
+(57,57,4,2,"vitae, erat. Vivamus nisi. Mauris nulla. Integer urna. Vivamus molestie dapibus ligula. Aliquam erat volutpat. Nulla dignissim. Maecenas ornare egestas","elit, pretium et, rutrum non, hendrerit id, ante. Nunc mauris sapien, cursus in, hendrerit consectetuer, cursus"),
+(58,58,2,3,"ac mi eleifend egestas. Sed pharetra, felis eget varius ultrices, mauris ipsum porta","cubilia Curae; Donec tincidunt. Donec vitae erat"),
+(59,59,5,5,"lectus pede, ultrices a, auctor non, feugiat nec, diam. Duis mi enim, condimentum eget,","senectus et netus et malesuada fames ac turpis egestas. Aliquam fringilla cursus purus. Nullam scelerisque neque sed sem egestas"),
+(60,60,1,2,"ipsum. Curabitur consequat, lectus sit","lorem fringilla ornare placerat, orci lacus vestibulum lorem, sit amet ultricies sem magna nec quam. Curabitur vel"),
+(61,61,1,3,"vel est tempor bibendum. Donec felis orci, adipiscing","euismod urna. Nullam lobortis quam a felis ullamcorper viverra. Maecenas iaculis aliquet diam. Sed diam lorem,"),
+(62,62,1,1,"Etiam ligula tortor, dictum eu, placerat eget, venenatis a,","sem. Pellentesque ut ipsum ac mi eleifend egestas. Sed pharetra, felis"),
+(63,63,3,4,"luctus et ultrices posuere cubilia Curae; Donec tincidunt. Donec vitae erat vel pede blandit congue. In scelerisque scelerisque","dolor, nonummy ac, feugiat non, lobortis quis, pede. Suspendisse dui. Fusce diam nunc, ullamcorper eu, euismod ac, fermentum vel,"),
+(64,64,2,3,"aliquam arcu. Aliquam ultrices iaculis odio. Nam interdum enim non nisi. Aenean eget metus. In nec orci. Donec nibh. Quisque","ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam auctor, velit eget laoreet posuere, enim nisl elementum purus, accumsan interdum libero"),
+(65,65,1,3,"Quisque tincidunt pede ac urna. Ut tincidunt vehicula risus. Nulla eget metus eu erat semper rutrum. Fusce","mauris a nunc. In at"),
+(66,66,4,5,"lectus, a sollicitudin orci sem eget massa. Suspendisse eleifend. Cras","gravida. Praesent eu nulla at"),
+(67,67,1,1,"Phasellus fermentum convallis ligula. Donec luctus aliquet odio. Etiam ligula tortor, dictum eu,","elit erat vitae risus. Duis a mi fringilla mi lacinia mattis. Integer eu lacus. Quisque imperdiet, erat nonummy ultricies"),
+(68,68,5,2,"orci. Phasellus dapibus quam quis diam. Pellentesque habitant morbi tristique senectus et netus et","eget varius ultrices, mauris ipsum porta elit, a feugiat tellus lorem eu"),
+(69,69,2,2,"velit eget laoreet posuere, enim nisl elementum purus, accumsan interdum libero dui","Nullam feugiat placerat velit. Quisque varius. Nam porttitor scelerisque neque. Nullam nisl. Maecenas malesuada fringilla"),
+(70,70,1,5,"a, dui. Cras pellentesque. Sed dictum. Proin eget odio. Aliquam vulputate ullamcorper magna. Sed eu eros. Nam consequat dolor vitae","aliquet nec, imperdiet nec, leo. Morbi"),
+(71,71,1,5,"luctus vulputate, nisi sem semper erat, in consectetuer ipsum nunc id enim. Curabitur massa. Vestibulum accumsan neque et","cursus luctus, ipsum leo elementum sem, vitae aliquam eros turpis non enim. Mauris quis turpis vitae purus gravida"),
+(72,72,4,2,"eros. Nam consequat dolor vitae dolor. Donec fringilla. Donec feugiat metus sit amet ante. Vivamus","et risus. Quisque libero lacus, varius et, euismod et, commodo at, libero. Morbi accumsan laoreet ipsum. Curabitur consequat,"),
+(73,73,2,5,"odio a purus. Duis elementum, dui quis accumsan convallis, ante lectus convallis est, vitae sodales nisi magna sed dui.","fringilla, porttitor vulputate, posuere vulputate, lacus."),
+(74,74,4,4,"mi enim, condimentum eget, volutpat ornare, facilisis eget, ipsum. Donec sollicitudin adipiscing ligula. Aenean gravida nunc","lorem fringilla ornare placerat, orci lacus vestibulum lorem, sit amet ultricies sem magna nec quam. Curabitur vel lectus. Cum sociis"),
+(75,75,2,4,"nec enim. Nunc ut erat. Sed nunc est, mollis non, cursus non, egestas a, dui. Cras pellentesque. Sed dictum.","Morbi sit amet massa. Quisque porttitor eros nec tellus. Nunc lectus pede, ultrices a,"),
+(76,76,4,3,"Nunc sed orci lobortis augue scelerisque mollis. Phasellus","dolor. Fusce mi lorem, vehicula et, rutrum eu, ultrices sit"),
+(77,77,3,4,"lacinia vitae, sodales at, velit. Pellentesque ultricies","purus, accumsan interdum libero dui"),
+(78,78,3,3,"auctor quis, tristique ac, eleifend vitae, erat. Vivamus nisi. Mauris","nisi magna sed dui. Fusce aliquam, enim"),
+(79,79,4,5,"vel turpis. Aliquam adipiscing lobortis risus. In mi pede, nonummy ut, molestie in, tempus eu, ligula. Aenean euismod","cubilia Curae; Donec tincidunt. Donec vitae erat vel pede blandit congue. In"),
+(80,80,1,3,"id magna et ipsum cursus","magna sed dui. Fusce aliquam, enim nec"),
+(81,81,5,4,"lobortis augue scelerisque mollis. Phasellus libero mauris, aliquam eu, accumsan sed, facilisis vitae, orci. Phasellus dapibus quam quis diam.","ligula elit, pretium et, rutrum non, hendrerit id, ante."),
+(82,82,5,2,"fringilla cursus purus. Nullam scelerisque neque sed sem egestas","tellus sem mollis dui, in sodales elit erat vitae risus. Duis a mi fringilla mi lacinia mattis. Integer"),
+(83,83,2,5,"quam a felis ullamcorper viverra. Maecenas iaculis aliquet diam. Sed diam lorem, auctor quis, tristique ac, eleifend vitae, erat. Vivamus","lectus. Nullam suscipit, est ac facilisis facilisis, magna tellus faucibus leo, in lobortis tellus justo sit amet nulla."),
+(84,84,2,5,"Mauris magna. Duis dignissim tempor arcu. Vestibulum ut eros non enim commodo hendrerit. Donec porttitor tellus non","amet risus. Donec egestas. Aliquam nec enim. Nunc ut erat. Sed nunc est,"),
+(85,85,4,4,"Aenean euismod mauris eu elit. Nulla facilisi. Sed neque. Sed eget lacus. Mauris non dui nec","Suspendisse sed dolor. Fusce mi lorem, vehicula et, rutrum eu, ultrices sit amet, risus. Donec nibh enim, gravida sit"),
+(86,86,3,5,"Quisque fringilla euismod enim. Etiam gravida molestie arcu. Sed eu nibh vulputate mauris sagittis placerat. Cras","neque. In ornare sagittis felis. Donec tempor, est ac"),
+(87,87,4,2,"In faucibus. Morbi vehicula. Pellentesque tincidunt tempus risus. Donec egestas. Duis ac arcu. Nunc mauris. Morbi non sapien molestie orci","Fusce mi lorem, vehicula et, rutrum eu, ultrices sit amet, risus. Donec nibh enim, gravida sit"),
+(88,88,2,1,"faucibus leo, in lobortis tellus justo sit amet nulla.","porttitor eros nec tellus. Nunc lectus pede, ultrices"),
+(89,89,3,4,"nulla. Integer urna. Vivamus molestie dapibus ligula. Aliquam erat volutpat.","ridiculus mus. Proin vel arcu eu odio tristique pharetra. Quisque ac libero nec"),
+(90,90,2,2,"a mi fringilla mi lacinia mattis.","lacus. Quisque purus sapien, gravida non, sollicitudin a, malesuada id, erat. Etiam vestibulum massa rutrum magna. Cras convallis convallis"),
+(91,91,5,3,"ac arcu. Nunc mauris. Morbi non sapien molestie orci tincidunt adipiscing.","mattis semper, dui lectus rutrum urna, nec luctus felis purus ac tellus. Suspendisse sed dolor. Fusce mi lorem, vehicula"),
+(92,92,4,5,"lorem, auctor quis, tristique ac, eleifend vitae, erat. Vivamus nisi. Mauris nulla. Integer urna. Vivamus molestie","Nam nulla magna, malesuada vel, convallis in, cursus et, eros. Proin ultrices. Duis volutpat nunc"),
+(93,93,5,1,"tempor augue ac ipsum. Phasellus vitae mauris","Phasellus ornare. Fusce mollis. Duis sit amet diam eu"),
+(94,94,2,4,"ultrices. Duis volutpat nunc sit","nascetur ridiculus mus. Donec dignissim magna a tortor. Nunc"),
+(95,95,5,2,"luctus et ultrices posuere cubilia Curae; Phasellus ornare. Fusce mollis. Duis sit amet diam eu dolor egestas rhoncus. Proin","vel arcu eu odio tristique pharetra. Quisque ac libero nec ligula consectetuer rhoncus."),
+(96,96,3,4,"ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec tincidunt. Donec vitae erat vel","aliquam adipiscing lacus. Ut nec urna et arcu imperdiet ullamcorper. Duis at lacus. Quisque purus sapien, gravida non, sollicitudin a,"),
+(97,97,4,5,"Cras interdum. Nunc sollicitudin commodo ipsum. Suspendisse non leo. Vivamus nibh dolor, nonummy ac,","In mi pede, nonummy ut, molestie in,"),
+(98,98,2,5,"Donec at arcu. Vestibulum ante ipsum primis in","ultrices a, auctor non, feugiat nec, diam. Duis mi enim, condimentum eget, volutpat ornare,"),
+(99,99,2,4,"Morbi neque tellus, imperdiet non, vestibulum nec, euismod in, dolor. Fusce feugiat. Lorem ipsum dolor sit amet, consectetuer adipiscing","molestie pharetra nibh. Aliquam ornare, libero at auctor ullamcorper, nisl arcu iaculis enim, sit amet ornare lectus"),
+(100,100,2,4,"Proin mi. Aliquam gravida mauris","interdum enim non nisi. Aenean eget");
+/* !40000 ALTER TABLE `ratings` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
