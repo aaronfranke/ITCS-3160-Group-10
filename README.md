@@ -16,7 +16,7 @@ Aaron Franke
 
 Scott Girard
 
-Ross Landgraf
+Ross Landgraf: Junior Computer Science Major at UNCC with a focus in Cyber Security.
 
 Jai Tabora
 
