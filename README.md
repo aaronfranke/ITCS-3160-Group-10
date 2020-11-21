@@ -10,19 +10,21 @@ This project adds a rating system for the drivers and restaurants. The rating sy
 
 ## Team Members
 
-Ryan Essenmacher: Junior Computer Science Major at UNCC with a focus in Data Science.
+Ryan Essenmacher
 
 Aaron Franke
 
 Scott Girard
 
-Ross Landgraf: Junior Computer Science Major at UNCC with a focus in Cyber Security.
+Ross Landgraf
 
-Jai Tabora: CS student
+Jai Tabora
 
 ## Use Case for Rating System
 
-Use case for the rating system goes here
+[Use Case](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/images/rating_system_use_case.png)
+
+[Use Case SQL Statements](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/sample_ratings_data.sql)
 
 ## Business Rules
 
@@ -33,15 +35,16 @@ Use case for the rating system goes here
 5. A delivery must be made before a customer can rate a restaurant.
 6. A customer can rate the delivery only one time per order.
 7. A customer can rate the restaurant only one time per order.
-8. The ratings will be based on a 5-star rating system.
+8. Administrators can view driver ratings.
+9. The ratings will be based on a 5-star rating system.
 
 ## EERD (full database)
 
-A link to the full database goes here.
+[EERD](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/pdf/EERD_deliverable2_v2.pdf)
 
 ## Data Dictionary
 
-A link to the Data Dictionary goes here.
+[Data Dictionary](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/images/Group10_DataDictionary_deliverable2.pdf)
 
 ## MySQL Queries
 
