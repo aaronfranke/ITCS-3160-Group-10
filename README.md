@@ -18,7 +18,7 @@ Scott Girard
 
 Ross Landgraf: Junior Computer Science Major at UNCC with a focus in Cyber Security.
 
-Jai Tabora
+Jai Tabora: CS student
 
 ## Use Case for Rating System
 
