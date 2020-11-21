@@ -10,7 +10,7 @@ This project adds a rating system for the drivers and restaurants. The rating sy
 
 ## Team Members
 
-Ryan Essenmacher
+Ryan Essenmacher: Junior Computer Science Major at UNCC with a focus in Data Science.
 
 Aaron Franke
 
