@@ -3,10 +3,10 @@
 This project adds a rating system to the Campus Eats database. The rating system allows customers of Campus Eats to rate both drivers and restaurants.
 
 ## Introduction
+
 With the threat of the Corona virus, food delivery services are more important than ever. Local restaurants are eager to find easy ways to have food delivered to customers without having to hire delivery employees. Even when things return to normal, many experts feel that food delivery will be something that we all will have become accustomed to as a part of our regular activities (even more than before). Students love food delivery services on campus. Campuses do not like the steady stream of visitors that may or may not have a formal connection with the university. Companies such as UberEats and GrubHub are happy to deliver on campus, but many schools are wondering if they should take control of the delivery and ensure that students and authorized university employees are the only ones delivering food on campus for safety and health reasons.
 
-This project adds a rating system for the drivers and restaurants. The rating system will allow food delivery customers to rate both the restaurant and the food delivery person. Every time a customer places an order for delivery, they will have an opportunity to rate the restaurant and the driver for that order after the food has been delivered. New orders will provide the customer with new opportunities to place ratings. We will be using a 5-level rating system with a comment field for rating drivers and restaurants. We believe the simplicity of this rating system will encourage its use and will provide valuable feedback to all stakeholders: the restaurant owner, the delivery driver, and current and future restaurant customers. 
-
+This project adds a rating system for the drivers and restaurants. The rating system will allow food delivery customers to rate both the restaurant and the food delivery person. Every time a customer places an order for delivery, they will have an opportunity to rate the restaurant and the driver for that order after the food has been delivered. New orders will provide the customer with new opportunities to place ratings. We will be using a 5-level rating system with a comment field for rating drivers and restaurants. We believe the simplicity of this rating system will encourage its use and will provide valuable feedback to all stakeholders: the restaurant owner, the delivery driver, and current and future restaurant customers.
 
 ## Team Members
 
@@ -21,9 +21,11 @@ Ross Landgraf: Junior Computer Science Major at UNCC with a focus in Cyber Secur
 Jai Tabora
 
 ## Use Case for Rating System
+
 Use case for the rating system goes here
- 
+
 ## Business Rules
+
 1. Only students may be drivers.
 2. A customer must be a registered user.
 3. A customer must place an order before rating a restaurant.
@@ -33,30 +35,37 @@ Use case for the rating system goes here
 7. A customer can rate the restaurant only one time per order.
 8. The ratings will be based on a 5-star rating system.
 
-
 ## EERD (full database)
+
 A link to the full database goes here.
 
 ## MySQL Queries
+
 MySQL Queries go here.
 
 ## Stored Procedure
+
 Stored procedures go here.
 
 ## Web/App Implementation
+
 Web interface for the rating system
 
 ## Description of Future Work
+
 What we plan to do next.
 
 ## MySQL Dump
+
 It is what it sounds like.
 
 ## PPT Video
+
 A link to the PPT Video can be found here:
 [PowerPoint Video](https://youtube.com/)
 
 ## Credits
+
 This project is based on work originally created by the "Mavericks" team: Dhananjay Arora, Akshay Babu, Sumit Kawale, and Prashant Madaan. Fall 2020.
 
 #### This derivative work is based on a project on loan and used with permission from the Mavericks team.
