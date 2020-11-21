@@ -39,6 +39,10 @@ Use case for the rating system goes here
 
 A link to the full database goes here.
 
+## Data Dictionary
+
+A link to the Data Dictionary goes here.
+
 ## MySQL Queries
 
 MySQL Queries go here.
