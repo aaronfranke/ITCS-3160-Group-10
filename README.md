@@ -20,11 +20,9 @@ Ross Landgraf
 
 Jai Tabora
 
-## Use Case for Rating System
+## Use Case Diagram for Rating System
 
 [Use Case](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/images/rating_system_use_case.png)
-
-[Use Case SQL Statements](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/UseCaseSQL.sql)
 
 ## Business Rules
 
@@ -48,7 +46,7 @@ Jai Tabora
 
 ## MySQL Queries
 
-MySQL Queries go here.
+[Use Case SQL Statements](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/UseCaseSQL.sql)
 
 ## Stored Procedure
 
