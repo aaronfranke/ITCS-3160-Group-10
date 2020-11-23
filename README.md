@@ -20,9 +20,13 @@ Ross Landgraf
 
 Jai Tabora
 
-## Use Case Diagram for Rating System
+## Use Case for Rating System
 
-[Use Case](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/images/rating_system_use_case.png)
+1. Customers provide ratings after an order.
+2. Customers may search for ratings on a particular restaurant.
+3. Administrators of the system can view driver ratings and restaurant ratings.
+
+[Use Case Diagram](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/images/rating_system_use_case.png)
 
 ## Business Rules
 
