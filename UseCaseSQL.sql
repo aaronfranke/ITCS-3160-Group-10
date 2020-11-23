@@ -30,7 +30,7 @@ min ratings.
 -- rating_id, order_id, driver_rating, restaurant_rating, driver_comment, restaurant_comment
 INSERT INTO ratings
 VALUES
-(101, 101 ,2, 3,'Driver Comment', 'Restaurant Comment');
+(101, 101, 2, 3, 'Driver Comment', 'Restaurant Comment');
 
 
 
