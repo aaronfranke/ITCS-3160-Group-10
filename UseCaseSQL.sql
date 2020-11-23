@@ -30,12 +30,12 @@ min ratings.
 -- rating_id, order_id, driver_rating, restaurant_rating, driver_comment, restaurant_comment
 INSERT INTO ratings
 VALUES
-(101,101,2,3,'Driver Comment', 'Restaurant Comment');
+(101, 101 ,2, 3,'Driver Comment', 'Restaurant Comment');
 
 
 
 -- when given a restaurant ID, show the average rating
--- ie., what is the average rating for a restaurant whos id = 3 ?
+-- ie., what is the average rating for a restaurant whos `id = 3`?
 SELECT
     AVG(restaurant_rating) AS 'Average Restaurant Rating'
 FROM
@@ -47,7 +47,7 @@ WHERE
 
 
 -- when given a restaurant ID, show the max rating
--- ie., what it the max rating for a restaurant whos id = 3 ?
+-- ie., what it the max rating for a restaurant whos `id = 3`?
 SELECT
     MAX(restaurant_rating) AS 'Max Restaurant Rating'
 FROM
@@ -59,7 +59,7 @@ WHERE
 
 
 -- when given a restaurant ID, show the min rating
--- ie., what is the min rating for a restaurant whos id = 3 ?
+-- ie., what is the min rating for a restaurant whos `id = 3`?
 SELECT
     MIN(restaurant_rating) AS 'Min Restaurant Rating'
 FROM
@@ -70,7 +70,7 @@ WHERE
 
 
 
--- show the restaurant_id and average rating for all restaurants
+-- show the restaurant ID and average rating for all restaurants
 SELECT
     restaurant_id, AVG(restaurant_rating)
 FROM
@@ -90,7 +90,7 @@ GROUP BY restaurant_id;
 
 
 
--- show the restaurant_id and min rating for all restaurants
+-- show the restaurant ID and min rating for all restaurants
 SELECT
     restaurant_id, MIN(restaurant_rating)
 FROM
@@ -101,7 +101,7 @@ GROUP BY restaurant_id;
 
 
 -- when given a driver ID, show the average rating
--- ie., what is the average rating for a driver whos id = 3 ?
+-- ie., what is the average rating for a driver whos `id = 3`?
 SELECT
     AVG(driver_rating) AS 'Average Driver Rating'
 FROM
@@ -113,7 +113,7 @@ WHERE
 
 
 -- when given a driver ID, show max rating
--- ie., what is the max rating for a driver whos id = 3 ?
+-- ie., what is the max rating for a driver whos `id = 3`?
 SELECT
     MAX(driver_rating) AS 'Max Driver Rating'
 FROM
@@ -125,7 +125,7 @@ WHERE
 
 
 -- when given a driver ID, show the min rating
--- ie., what is the min rating for a driver whos id = 3 ?
+-- ie., what is the min rating for a driver whos `id = 3`?
 SELECT
 	MIN(driver_rating) AS 'Min Driver Rating'
 FROM
