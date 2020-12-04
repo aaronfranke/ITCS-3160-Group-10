@@ -66,7 +66,7 @@ What we plan to do next.
 
 ## MySQL Dump
 
-A link to the complete database dump will go here.
+[Complete Database Dump](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/sql/Group10_Database_Dump.sql)
 
 ## PPT Video
 
