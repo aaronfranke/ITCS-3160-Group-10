@@ -56,7 +56,7 @@ Note the cardinality shown in the diagram. The crows-foot notation shows that a 
 
 ## MySQL Queries
 
-[Use Case SQL Statements](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/UseCaseSQL.sql)
+[Use Case SQL Statements](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/sql/UseCaseSQL.sql)
 
 ## Stored Procedure
 
