@@ -42,7 +42,7 @@ Jai Tabora
 
 ## EERD (full database)
 
-The Enhanced Entity Relationship Diagram graphically represents the tables in the Campus Eats database and the relationships between entities. For this project we are concerned with adding a ratings system so that customers canrate both drivers and restaurants.
+The Enhanced Entity Relationship Diagram graphically represents the tables in the Campus Eats database and the relationships between entities. For this project we are concerned with adding a ratings system so that customers can rate both drivers and restaurants.
 
 In the EERD we show our new ratings table on the lower left corner of the diagram. In our ratings table, we have rating_id as a primary key, and order_id is a foreign key referring to order_id in the orders table. We also show that the ratings table holds a driver rating, a restaurant rating, a driver comment, and a restaurant comment.
 
