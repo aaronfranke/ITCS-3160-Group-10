@@ -46,7 +46,7 @@ The Enhanced Entity Relationship Diagram graphically represents the tables in th
 
 In the EERD we show our new ratings table on the lower left corner of the diagram. In our ratings table, we have rating_id as a primary key, and order_id is a foreign key referring to order_id in the orders table. We also show that the ratings table holds a driver rating, a restaurant rating, a driver comment, and a restaurant comment.
 
-Note the cardinality shown in the diagram. The crows-foot notation shows that a rating belongs to one and only one order. On the other side of the relationship, we show that orders can have zero to many ratings.
+Note the cardinality shown in the diagram. The crows-foot notation shows that a rating belongs to one and only one order. On the other side of the relationship, we show that an order can have zero to many ratings.
 
 [EERD](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/pdf/EERD_deliverable2_v2.pdf)
 
