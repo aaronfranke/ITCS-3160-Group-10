@@ -23,3 +23,5 @@ WHERE restaurant_id = id_of_restaurant;
 END //
 
 DELIMITER ;
+
+
