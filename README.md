@@ -48,7 +48,7 @@ In the EERD we show our new ratings table on the lower left corner of the diagra
 
 Note the cardinality shown in the diagram. The crows-foot notation shows that a rating belongs to one and only one order. On the other side of the relationship, we show that an order can have zero to many ratings.
 
-[EERD](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/pdf/EERD_deliverable2_v2.pdf)
+[EERD](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/images/EERD.png)
 
 ## Data Dictionary
 
@@ -62,9 +62,23 @@ Note the cardinality shown in the diagram. The crows-foot notation shows that a 
 
 Stored procedures go here.
 
+## Indexes and indexing: speed up search run time
+
+SQL queries that look-up specific records, order by a field, or filter records meeting specific criteria (such as ‘where average > 3’), to name a few, perform a full scan of the table to find, order, or filter, etc. These operations are time expensive and increase query run time, especially when scanning tables with millions of rows. Luckily, run time could be decreased dramatically by indexing often-queried tables and columns.
+
+Indexing is the process of mapping records in a table or column(s) to another table where the search engine finds records fast. By indexing each record, the index leads the SQL search engine exactly to the location where the record is found, thus bypass scanning the entire table and improving run time. Indexing could be performed during the initiation of a data table (such as indexing the primary and/or foreign keys) or after the fact via a SQL command (the latter is stored in a separate table accessible to any query).
+
+The tables in our project contain indexes for the primary and foreign keys and we did not index additional fields/columns for any tables (because our database is small and indexing would not noticeably affect run time). However, we performed an experiment to validate the claims that indexing could speed up run time. Exhibit A shows a simple SQL query to retrieve the name of one person (from the ‘person’ table): query cost totaled 20.75 milliseconds. Then, we indexed the ‘person_name’ column of the ‘person’ table in Exhibit B. Lastly, we ran the same query in Exhibit C and compared the results: the total query cost after indexing decreased to 0.35 milliseconds, a decrease greater than 98% in search run time. The results validate the assertion that indexing increases efficiency and decreases run time. However, creating and using many indexes in complex queries of large data tables could yield higher run times; therefore, the use of indexes should be targeted and not overused.
+
+Exhibit A: run time without indexing. MySQL’s Explain view shows that query run time totaled 20.75 milliseconds as the search engine performed a full table scan.
+
+Exhibit B: index of column ‘person_name” on table ‘person.’
+
+Exhibit C: run time with indexing enabled. MySQL’s Explain view shows that query run time totaled 0.35 milliseconds yielding an increase greater than 98% in search efficiency.
+
 ## Web/App Implementation
 
-[An example CRUD interface]() can be found here.
+[An example CRUD interface](https://admin-eats.com) can be found here.
 
 ## Description of Future Work
 
@@ -86,7 +100,7 @@ What we plan to do next.
 [staff table](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/staff.png) |
 [student table](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/student.png) |
 [vehicle table](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/vehicle.png) |
-[users table for CRUD admin interface authentication](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/users.png)
+[users table for CRUD admin interface](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/users.png)
 
 ## PPT Video
 
