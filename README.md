@@ -62,11 +62,11 @@ Note the cardinality shown in the diagram. The crows-foot notation shows that a 
 
 #### Calculate Driver
 
-[Calculate Driver Stored Procedure]()
+[Calculate Driver Stored Procedure](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/calculate_driver.png)
 
 #### Calculate Restaurant
 
-[Calculate Restaurant Stored Procedure]()
+[Calculate Restaurant Stored Procedure](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/calculate_restaurant.png)
 
 ## Indexes and indexing: speed up search run time
 
