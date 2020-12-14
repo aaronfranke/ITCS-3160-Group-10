@@ -2,7 +2,7 @@
 -- First query: calculate average ratings for restaurants
 *********************************************************/
 
-SELECT 
+SELECT
     o1.restaurant_id,
     r2.restaurant_name,
     AVG(r1.restaurant_rating) AS AvgRating,

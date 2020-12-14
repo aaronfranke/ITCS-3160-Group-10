@@ -2,7 +2,7 @@
 -- Second query: calculate average ratings for drivers
 *********************************************************/
 
-SELECT 
+SELECT
     o.driver_id,
     p.person_name,
     AVG(r.driver_rating) AS AvgRating,
