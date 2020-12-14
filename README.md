@@ -26,7 +26,7 @@ Jai Tabora
 2. Customers may search for ratings on a particular restaurant.
 3. Administrators of the system can view driver ratings and restaurant ratings.
 
-[Use Case Diagram](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/images/rating_system_use_case.png)
+[Use Case Diagram](images/rating_system_use_case.png)
 
 ## Business Rules
 
@@ -48,25 +48,25 @@ In the EERD we show our new ratings table on the lower left corner of the diagra
 
 Note the cardinality shown in the diagram. The crows-foot notation shows that a rating belongs to one and only one order. On the other side of the relationship, we show that an order can have zero to many ratings.
 
-[EERD](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/images/EERD.png)
+[EERD](images/EERD.png)
 
 ## Data Dictionary
 
-[Data Dictionary](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/pdf/Group10_DataDictionary_deliverable2.pdf)
+[Data Dictionary](pdf/Group10_DataDictionary_deliverable2.pdf)
 
 ## MySQL Queries
 
-[Use Case SQL Statements](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/sql/UseCaseSQL.sql)
+[Use Case SQL Statements](sql/UseCaseSQL.sql)
 
 ## Stored Procedure
 
 #### Calculate Driver
 
-[Calculate Driver Stored Procedure](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/calculate_driver.png)
+[Calculate Driver Stored Procedure](screenshots/calculate_driver.png)
 
 #### Calculate Restaurant
 
-[Calculate Restaurant Stored Procedure](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/calculate_restaurant.png)
+[Calculate Restaurant Stored Procedure](screenshots/calculate_restaurant.png)
 
 ## Indexes and indexing: speed up search run time
 
@@ -74,7 +74,7 @@ SQL queries that look-up specific records, order by a field, or filter records m
 
 Indexing is the process of mapping records in a table or column(s) to another table where the search engine finds records fast. By indexing each record, the index leads the SQL search engine exactly to the location where the record is found, thus bypass scanning the entire table and improving run time. Indexing could be performed during the initiation of a data table (such as indexing the primary and/or foreign keys) or after the fact via a SQL command (the latter is stored in a separate table accessible to any query).
 
-The tables in our project contain indexes for the primary and foreign keys and we did not index additional fields/columns for any tables (because our database is small and indexing would not noticeably affect run time). However, we performed an experiment to validate the claims that indexing could speed up run time. [Exhibit A](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/exhibit_a.png) shows a simple SQL query to retrieve the name of one person (from the ‘person’ table): query cost totaled 20.75 milliseconds. Then, we indexed the ‘person_name’ column of the ‘person’ table in [Exhibit B](https://raw.github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/exhibit_b.png). Lastly, we ran the same query in Exhibit [Exhibit C](https://raw.github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/exhibit_c.png) and compared the results: the total query cost after indexing decreased to 0.35 milliseconds, a decrease greater than 98% in search run time. The results validate the assertion that indexing increases efficiency and decreases run time. However, creating and using many indexes in complex queries of large data tables could yield higher run times; therefore, the use of indexes should be targeted and not overused.
+The tables in our project contain indexes for the primary and foreign keys and we did not index additional fields/columns for any tables (because our database is small and indexing would not noticeably affect run time). However, we performed an experiment to validate the claims that indexing could speed up run time. [Exhibit A](screenshots/exhibit_a.png) shows a simple SQL query to retrieve the name of one person (from the ‘person’ table): query cost totaled 20.75 milliseconds. Then, we indexed the ‘person_name’ column of the ‘person’ table in [Exhibit B](screenshots/exhibit_b.png). Lastly, we ran the same query in Exhibit [Exhibit C](screenshots/exhibit_c.png) and compared the results: the total query cost after indexing decreased to 0.35 milliseconds, a decrease greater than 98% in search run time. The results validate the assertion that indexing increases efficiency and decreases run time. However, creating and using many indexes in complex queries of large data tables could yield higher run times; therefore, the use of indexes should be targeted and not overused.
 
 **Exhibit A**: run time without indexing. MySQL’s Explain view shows that query run time totaled 20.75 milliseconds as the search engine performed a full table scan.
 
@@ -90,10 +90,23 @@ The tables in our project contain indexes for the primary and foreign keys and w
 
 ## Web/App Implementation
 
+The administrative web app prototype is for **demonstration purposes only** and should not be used in production or in a mission-critical environment. Use of the application in any circumstance could result in the compromise or loss of data and/or including damage to your infrastructure.
+
+This web application allows an administrative user to manage entries in the restaurant table of the database. User authentication is handled by the application; only authorized users can access the application's create-read-update-delete functionality.
+
+An authenticated administrator has the ability to add new restaurants, view existing restaurant entries, update existing entries, and delete restaurant entries.
+
+New users with administrative privileges can only be added by a previously authenticated user. A logged-in user has the ability to change their own password, access the restaurant administration functions, and add new administrative users.
+
+The PHP htmlspecialchars() function is used on all form input to mitigate cross-site scripting attacks. In the future a PDO could be implemented to reduce the attack surface for SQL injection attacks.
+
+The code used in this application is provided in this tutorial: [PHP MySQL CRUD Application](https://www.tutorialrepublic.com/php-tutorial/php-mysql-crud-application.php). The [code is copyright Tutorial Republic](https://www.tutorialrepublic.com/terms-of-use.php) and is an example for the purpose of demonstrate a CRUD interface for a database application.
+
 [An example CRUD interface](https://admin-eats.com) can be found here.
+
 #### Screenshots of Administrative Interface (CRUD)
 
-[Login Screen](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/login.png) | [Table View](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/table_view.png) | [Create Record](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/create_record.png) | [Create Record Filled](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/create_record_filled.png) | [Record Added](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/record_added.png) | [View Record](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/view_record.png) | [Update Record](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/edit_record.png) | [Updated Record](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/updated_record.png) | [Delete Record](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/delete_record.png) | [Record Deleted](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/record_deleted.png) | [Reset Password](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/reset_password.png)
+[Login Screen](screenshots/login.png) | [Table View](screenshots/table_view.png) | [Create Record](screenshots/create_record.png) | [Create Record Filled](screenshots/create_record_filled.png) | [Record Added](screenshots/record_added.png) | [View Record](screenshots/view_record.png) | [Update Record](screenshots/edit_record.png) | [Updated Record](screenshots/updated_record.png) | [Delete Record](screenshots/delete_record.png) | [Record Deleted](screenshots/record_deleted.png) | [Reset Password](screenshots/reset_password.png)
 
 ## Description of Future Work
 
@@ -101,21 +114,21 @@ What we plan to do next.
 
 ## MySQL Dump
 
-[Complete Database Dump](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/sql/Group10_Database_Dump.sql)
+[Complete Database Dump](sql/Group10_Database_Dump.sql)
 
 #### Screenshots of Populated Database Tables:
-[ratings table](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/ratings.png) |
-[order table](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/order.png) |
-[delivery table](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/delivery.png) |
-[driver table](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/driver.png) |
-[faculty table](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/faculty.png) |
-[location table](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/location.png) |
-[person table](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/person.png) |
-[restaurant table](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/restaurant.png) |
-[staff table](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/staff.png) |
-[student table](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/student.png) |
-[vehicle table](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/vehicle.png) |
-[users table for CRUD admin interface](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/users.png)
+[ratings table](screenshots/ratings.png) |
+[order table](screenshots/order.png) |
+[delivery table](screenshots/delivery.png) |
+[driver table](screenshots/driver.png) |
+[faculty table](screenshots/faculty.png) |
+[location table](screenshots/location.png) |
+[person table](screenshots/person.png) |
+[restaurant table](screenshots/restaurant.png) |
+[staff table](screenshots/staff.png) |
+[student table](screenshots/student.png) |
+[vehicle table](screenshots/vehicle.png) |
+[users table for CRUD admin interface](screenshots/users.png)
 
 ## PPT Video
 
