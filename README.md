@@ -66,11 +66,11 @@ Picture 1 below represents a stored procedure to calculate the average rating of
 
 **Picture 1**: Stored procedure named ‘Calculate_Driver’ that takes an integer parameter (the number of the driver) and SQL code (in the body of the stored procedure) that calculates the ratings for the driver.
 
-![Picture 2](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/stored_procedure_pic_2_.png)
+![Picture 1](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/stored_procedure_pic_1.png)
 
 **Picture 2**: Calling a stored procedure and passing the parameter ‘3’ to calculate the ratings for driver ID 3.
 
-![Picture 2](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/stored_procedure_pic_2_.png)
+![Picture 2](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/stored_procedure_pic_2.png)
 
 #### Calculate Driver
 
@@ -106,13 +106,13 @@ The web application allows an administrative user to manage entries in the resta
 
 An authenticated administrator has the ability to add new restaurants, view existing restaurant entries, update existing entries, and delete restaurant entries.
 
-New users who will have administrative privileges can only be added by a previously authenticated user. A logged-in user has the ability to change their own password, access the restaurant administration functions, and add new administrative users.
+New users (who will have administrative privileges) can only be added by a previously authenticated user. A logged-in user has the ability to change their own password, access the restaurant administration functions, and add new administrative users.
 
 The PHP htmlspecialchars() function is used on all form input to mitigate cross-site scripting attacks. In the future a [PHP Data Objects (PDO)](https://www.php.net/manual/en/book.pdo.php) function could be implemented to reduce the attack surface for SQL injection attacks.
 
 The code used in this application can be found in this tutorial: [PHP MySQL CRUD Application](https://www.tutorialrepublic.com/php-tutorial/php-mysql-crud-application.php) and is used for the purpose of demonstrating a CRUD interface for a database application.
 
-[The working example CRUD interface can be found here].(https://admin-eats.com)
+[The working example CRUD interface can be found here](https://admin-eats.com).
 
 #### Screenshots of the Administrative Interface (CRUD)
 
