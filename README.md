@@ -70,17 +70,17 @@ Indexing is the process of mapping records in a table or column(s) to another ta
 
 The tables in our project contain indexes for the primary and foreign keys and we did not index additional fields/columns for any tables (because our database is small and indexing would not noticeably affect run time). However, we performed an experiment to validate the claims that indexing could speed up run time. [Exhibit A](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/exhibit_a.png) shows a simple SQL query to retrieve the name of one person (from the ‘person’ table): query cost totaled 20.75 milliseconds. Then, we indexed the ‘person_name’ column of the ‘person’ table in [Exhibit B](https://raw.github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/exhibit_b.png). Lastly, we ran the same query in Exhibit [Exhibit C](https://raw.github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/exhibit_c.png) and compared the results: the total query cost after indexing decreased to 0.35 milliseconds, a decrease greater than 98% in search run time. The results validate the assertion that indexing increases efficiency and decreases run time. However, creating and using many indexes in complex queries of large data tables could yield higher run times; therefore, the use of indexes should be targeted and not overused.
 
-![Exhibit A](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/exhibit_a.png)
+**Exhibit A**: run time without indexing. MySQL’s Explain view shows that query run time totaled 20.75 milliseconds as the search engine performed a full table scan.
 
-Exhibit A: run time without indexing. MySQL’s Explain view shows that query run time totaled 20.75 milliseconds as the search engine performed a full table scan.
+![Exhibit A](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/exhibit_a.png =516x342)
 
-![Exhibit B](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/exhibit_b.png)
+**Exhibit B**: index of column ‘person_name” on table ‘person.’
 
-Exhibit B: index of column ‘person_name” on table ‘person.’
+![Exhibit B](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/exhibit_b.png =516x342)
 
-![Exhibit C](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/exhibit_c.png)
+**Exhibit C**: run time with indexing enabled. MySQL’s Explain view shows that query run time totaled 0.35 milliseconds yielding an increase greater than 98% in search efficiency.
 
-Exhibit C: run time with indexing enabled. MySQL’s Explain view shows that query run time totaled 0.35 milliseconds yielding an increase greater than 98% in search efficiency.
+![Exhibit C](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/exhibit_c.png =516x342)
 
 ## Web/App Implementation
 
