@@ -90,8 +90,6 @@ The tables in our project contain indexes for the primary and foreign keys and w
 
 ## Web/App Implementation
 
-The administrative web app prototype is for **demonstration purposes only** and should not be used in production or in a mission-critical environment. Use of the application in any circumstance could result in the compromise or loss of data and/or including damage to your infrastructure.
-
 This web application allows an administrative user to manage entries in the restaurant table of the database. User authentication is handled by the application; only authorized users can access the application's create-read-update-delete functionality.
 
 An authenticated administrator has the ability to add new restaurants, view existing restaurant entries, update existing entries, and delete restaurant entries.
@@ -100,11 +98,11 @@ New users with administrative privileges can only be added by a previously authe
 
 The PHP htmlspecialchars() function is used on all form input to mitigate cross-site scripting attacks. In the future a PDO could be implemented to reduce the attack surface for SQL injection attacks.
 
-The code used in this application is provided in this tutorial: [PHP MySQL CRUD Application](https://www.tutorialrepublic.com/php-tutorial/php-mysql-crud-application.php). The [code is copyright Tutorial Republic](https://www.tutorialrepublic.com/terms-of-use.php) and is an example for the purpose of demonstrate a CRUD interface for a database application.
+The code used in this application can be found in this tutorial: [PHP MySQL CRUD Application](https://www.tutorialrepublic.com/php-tutorial/php-mysql-crud-application.php). The code is [copyright Tutorial Republic](https://www.tutorialrepublic.com/terms-of-use.php) and is used as an example for the purpose of demonstrating a CRUD interface for a database application.
 
-[An example CRUD interface](https://admin-eats.com) can be found here.
+[The working example CRUD interface](https://admin-eats.com) can be found here.
 
-#### Screenshots of Administrative Interface (CRUD)
+#### Screenshots of the Administrative Interface (CRUD)
 
 [Login Screen](screenshots/login.png) | [Table View](screenshots/table_view.png) | [Create Record](screenshots/create_record.png) | [Create Record Filled](screenshots/create_record_filled.png) | [Record Added](screenshots/record_added.png) | [View Record](screenshots/view_record.png) | [Update Record](screenshots/edit_record.png) | [Updated Record](screenshots/updated_record.png) | [Delete Record](screenshots/delete_record.png) | [Record Deleted](screenshots/record_deleted.png) | [Reset Password](screenshots/reset_password.png)
 
