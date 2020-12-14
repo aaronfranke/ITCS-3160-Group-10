@@ -60,7 +60,13 @@ Note the cardinality shown in the diagram. The crows-foot notation shows that a 
 
 ## Stored Procedure
 
-Stored procedures go here.
+#### Calculate Driver
+
+[Calculate Driver Stored Procedure]()
+
+#### Calculate Restaurant
+
+[Calculate Restaurant Stored Procedure]()
 
 ## Indexes and indexing: speed up search run time
 
@@ -87,7 +93,7 @@ The tables in our project contain indexes for the primary and foreign keys and w
 [An example CRUD interface](https://admin-eats.com) can be found here.
 #### Screenshots of Administrative Interface (CRUD)
 
-[Login Screen](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/login.png) | [Table View](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/table_view.png) | [Create Record](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/create_record.png) | [Create Record Filled](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/create_record_filled.png) | [Record Added](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/record_added.png) | [View Record](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/view_record.png) | [Update Record](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/edit_record.png) | [Updated Record](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/updated_record.png) | [Delete Record](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/delete_record.png) | [Record Deleted](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/record_deleted.png) | [Reset Password](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/reset_password.png)
+[Login Screen](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/login.png) | [Table View](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/table_view.png) | [Create Record](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/create_record.png) | [Create Record Filled](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/create_record_filled.png) | [Record Added](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/record_added.png) | [View Record](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/view_record.png) | [Update Record](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/edit_record.png) | [Updated Record](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/updated_record.png) | [Delete Record](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/delete_record.png) | [Record Deleted](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/record_deleted.png) | [Reset Password](https://github.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/reset_password.png)
 
 ## Description of Future Work
 
