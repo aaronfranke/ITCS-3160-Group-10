@@ -86,7 +86,7 @@ What we plan to do next.
 [staff table](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/staff.png) |
 [student table](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/student.png) |
 [vehicle table](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/vehicle.png) |
-[users table needed for the CRUD admin interface](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/users.png)
+[users table for CRUD admin interface authentication](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/users.png)
 
 ## PPT Video
 
