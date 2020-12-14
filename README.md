@@ -62,11 +62,11 @@ Note the cardinality shown in the diagram. The crows-foot notation shows that a 
 
 #### Calculate Driver
 
-[Calculate Driver Stored Procedure](screenshots/calculate_driver.png)
+[SQL Calculate Driver Stored Procedure](sql/calculate_driver_stored_procedure.sql) : [screenshot](screenshots/calculate_driver.png)
 
 #### Calculate Restaurant
 
-[Calculate Restaurant Stored Procedure](screenshots/calculate_restaurant.png)
+[SQL: Calculate Restaurant Stored Procedure](sql/calculate_restaurant_stored_procedure.sql) : [screenshot](screenshots/calculate_restaurant.png)
 
 ## Indexes and indexing: speed up search run time
 
@@ -90,15 +90,15 @@ The tables in our project contain indexes for the primary and foreign keys and w
 
 ## Web/App Implementation
 
-This web application allows an administrative user to manage entries in the restaurant table of the database. User authentication is handled by the application; only authorized users can access the application's create-read-update-delete functionality.
+The web application allows an administrative user to manage entries in the restaurant table of the database. User authentication is handled by the application; only authorized users can access the application's create-read-update-delete functionality.
 
 An authenticated administrator has the ability to add new restaurants, view existing restaurant entries, update existing entries, and delete restaurant entries.
 
 New users with administrative privileges can only be added by a previously authenticated user. A logged-in user has the ability to change their own password, access the restaurant administration functions, and add new administrative users.
 
-The PHP htmlspecialchars() function is used on all form input to mitigate cross-site scripting attacks. In the future a PDO could be implemented to reduce the attack surface for SQL injection attacks.
+The PHP htmlspecialchars() function is used on all form input to mitigate cross-site scripting attacks. In the future a [PHP Data Objects (PDO)](https://www.php.net/manual/en/book.pdo.php) function could be implemented to reduce the attack surface for SQL injection attacks.
 
-The code used in this application can be found in this tutorial: [PHP MySQL CRUD Application](https://www.tutorialrepublic.com/php-tutorial/php-mysql-crud-application.php). The code is [copyright Tutorial Republic](https://www.tutorialrepublic.com/terms-of-use.php) and is used as an example for the purpose of demonstrating a CRUD interface for a database application.
+The code used in this application can be found in this tutorial: [PHP MySQL CRUD Application](https://www.tutorialrepublic.com/php-tutorial/php-mysql-crud-application.php)and is used for the purpose of demonstrating a CRUD interface for a database application.
 
 [The working example CRUD interface](https://admin-eats.com) can be found here.
 
