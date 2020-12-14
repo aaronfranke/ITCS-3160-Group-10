@@ -74,11 +74,11 @@ Picture 1 below represents a stored procedure to calculate the average rating of
 
 #### Calculate Driver
 
-[SQL Calculate Driver Stored Procedure](sql/calculate_driver_stored_procedure.sql) : [screenshot](screenshots/calculate_driver.png)
+[SQL Calculate Driver Stored Procedure](sql/calculate_driver_stored_procedure.sql)
 
 #### Calculate Restaurant
 
-[SQL: Calculate Restaurant Stored Procedure](sql/calculate_restaurant_stored_procedure.sql) : [screenshot](screenshots/calculate_restaurant.png)
+[SQL: Calculate Restaurant Stored Procedure](sql/calculate_restaurant_stored_procedure.sql)
 
 ## Indexes and indexing: speed up search run time
 
@@ -102,7 +102,7 @@ The tables in our project contain indexes for the primary and foreign keys and w
 
 ## Web/App Implementation
 
-The web application allows an administrative user to manage entries in the restaurant table of the database. User authentication is handled by the application; only authorized users can access the application's create-read-update-delete functionality.
+The web application allows an administrative user to manage entries in the restaurant table of the database. User authentication is handled by the application; only authorized users can access the application's Create-Read-Update-Delete (CRUD) functionality.
 
 An authenticated administrator has the ability to add new restaurants, view existing restaurant entries, update existing entries, and delete restaurant entries.
 
@@ -120,7 +120,11 @@ The code used in this application can be found in this tutorial: [PHP MySQL CRUD
 
 ## Description of Future Work
 
-What we plan to do next.
+Additional work needs to be done to create a secure and fully functional web application. Specifically, a PHP data object function should be added to all user input forms to mitigate the risk of SQL injection attacks.
+
+The web administration interface needs to be expanded to support managing other database tables. Currently the web application only supports CRUD functionality on the restaurant table.
+
+Depending on user needs, some tables in the database may need additional columns. For example, if a user wants to sort restaurants by zip code, the current database design will not allow for that because there is not a zip-code column in the restaurant table. It is important to note, however, that changes to the database schema should be based on well defined use case needs.
 
 ## MySQL Dump
 
