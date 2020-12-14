@@ -85,6 +85,9 @@ The tables in our project contain indexes for the primary and foreign keys and w
 ## Web/App Implementation
 
 [An example CRUD interface](https://admin-eats.com) can be found here.
+#### Screenshots of Administrative Interface (CRUD)
+
+[Login Screen](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/login.png) | [Table View](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/table_view.png) | [Create Record](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/create_record.png) | [Create Record Filled](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/create_record_filled.png) | [Record Added](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/record_added.png) | [View Record](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/view_record.png) | [Update Record](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/edit_record.png) | [Updated Record](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/updated_record.png) | [Delete Record](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/delete_record.png) | [Record Deleted](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/record_deleted.png) | [Reset Password](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/reset_password.png)
 
 ## Description of Future Work
 
@@ -94,7 +97,7 @@ What we plan to do next.
 
 [Complete Database Dump](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/sql/Group10_Database_Dump.sql)
 
-### Screenshots of populated database tables:
+#### Screenshots of Populated Database Tables:
 [ratings table](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/ratings.png) |
 [order table](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/order.png) |
 [delivery table](https://github.com/aaronfranke/ITCS-3160-Group-10/blob/master/screenshots/delivery.png) |
