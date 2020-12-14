@@ -60,6 +60,18 @@ Note the cardinality shown in the diagram. The crows-foot notation shows that a 
 
 ## Stored Procedure
 
+Database users who retrieve updated records daily or repeatedly throughout the week/month use stored procedures to simplify this task. Stored procedures are SQL code that is saved to a file and accessed via a call procedure. To execute the query, a user calls the procedure and specifies a parameter that the underlying SQL query then executes. Thereby, stored procedures allow users to save time and increase efficiency by eliminating the need to re-write SQL code.
+
+Picture 1 below represents a stored procedure to calculate the average rating of an individual driver. Each stored procedure starts with the command ‘CREATE PROCEDURE’ followed by the name of the procedure and the parameter passed into the SQL query. Likewise, stored procedures end with the command “END.’ This stored procedure is saved to a file and is accessed via the ‘CALL’ procedure as shown in picture 2.
+
+**Picture 1**: Stored procedure named ‘Calculate_Driver’ that takes an integer parameter (the number of the driver) and SQL code (in the body of the stored procedure) that calculates the ratings for the driver.
+
+![Picture 2](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/stored_procedure_pic_2_.png)
+
+**Picture 2**: Calling a stored procedure and passing the parameter ‘3’ to calculate the ratings for driver ID 3.
+
+![Picture 2](https://raw.githubusercontent.com/aaronfranke/ITCS-3160-Group-10/master/screenshots/stored_procedure_pic_2_.png)
+
 #### Calculate Driver
 
 [SQL Calculate Driver Stored Procedure](sql/calculate_driver_stored_procedure.sql) : [screenshot](screenshots/calculate_driver.png)
@@ -94,13 +106,13 @@ The web application allows an administrative user to manage entries in the resta
 
 An authenticated administrator has the ability to add new restaurants, view existing restaurant entries, update existing entries, and delete restaurant entries.
 
-New users with administrative privileges can only be added by a previously authenticated user. A logged-in user has the ability to change their own password, access the restaurant administration functions, and add new administrative users.
+New users who will have administrative privileges can only be added by a previously authenticated user. A logged-in user has the ability to change their own password, access the restaurant administration functions, and add new administrative users.
 
 The PHP htmlspecialchars() function is used on all form input to mitigate cross-site scripting attacks. In the future a [PHP Data Objects (PDO)](https://www.php.net/manual/en/book.pdo.php) function could be implemented to reduce the attack surface for SQL injection attacks.
 
-The code used in this application can be found in this tutorial: [PHP MySQL CRUD Application](https://www.tutorialrepublic.com/php-tutorial/php-mysql-crud-application.php)and is used for the purpose of demonstrating a CRUD interface for a database application.
+The code used in this application can be found in this tutorial: [PHP MySQL CRUD Application](https://www.tutorialrepublic.com/php-tutorial/php-mysql-crud-application.php) and is used for the purpose of demonstrating a CRUD interface for a database application.
 
-[The working example CRUD interface](https://admin-eats.com) can be found here.
+[The working example CRUD interface can be found here].(https://admin-eats.com)
 
 #### Screenshots of the Administrative Interface (CRUD)
 
