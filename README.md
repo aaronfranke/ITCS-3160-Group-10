@@ -114,7 +114,7 @@ An authenticated administrator has the ability to add new restaurants, view exis
 
 New users (who will have administrative privileges) can only be added by a previously authenticated user. A logged-in user has the ability to change their own password, access the restaurant administration functions, and add new administrative users.
 
-The PHP htmlspecialchars() function is used on all form input to mitigate cross-site scripting attacks. In the future a [PHP Data Objects (PDO)](https://www.php.net/manual/en/book.pdo.php) function could be implemented to reduce the attack surface for SQL injection attacks.
+The PHP htmlspecialchars() function is used on all form input to mitigate cross-site scripting attacks. Prepared SQL statements are used in the PHP code to help mitigate SQL injection attacks.
 
 The code used in this application can be found in this tutorial: [PHP MySQL CRUD Application](https://www.tutorialrepublic.com/php-tutorial/php-mysql-crud-application.php) and is used for the purpose of demonstrating a CRUD interface for a database application.
 
@@ -125,8 +125,6 @@ The code used in this application can be found in this tutorial: [PHP MySQL CRUD
 [Login Screen](screenshots/login.png) | [Table View](screenshots/table_view.png) | [Create Record](screenshots/create_record.png) | [Create Record Filled](screenshots/create_record_filled.png) | [Record Added](screenshots/record_added.png) | [View Record](screenshots/view_record.png) | [Update Record](screenshots/edit_record.png) | [Updated Record](screenshots/updated_record.png) | [Delete Record](screenshots/delete_record.png) | [Record Deleted](screenshots/record_deleted.png) | [Reset Password](screenshots/reset_password.png)
 
 ## Description of Future Work
-
-Additional work needs to be done to create a secure and fully functional web application. Specifically, a PHP data object function should be added to all user input forms to mitigate the risk of SQL injection attacks.
 
 The web administration interface can be expanded to support managing additional database tables. Currently the web application only supports CRUD operations on the restaurant table.
 
