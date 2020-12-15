@@ -207,7 +207,7 @@ DROP TABLE IF EXISTS `person_join`;
 /*!50001 DROP VIEW IF EXISTS `person_join`*/;
 SET @saved_cs_client     = @@character_set_client;
 /*!50503 SET character_set_client = utf8mb4 */;
-/*!50001 CREATE VIEW `person_join` AS SELECT 
+/*!50001 CREATE VIEW `person_join` AS SELECT
  1 AS `person_id`,
  1 AS `person_name`,
  1 AS `person_email`,
@@ -223,7 +223,7 @@ DROP TABLE IF EXISTS `person_student`;
 /*!50001 DROP VIEW IF EXISTS `person_student`*/;
 SET @saved_cs_client     = @@character_set_client;
 /*!50503 SET character_set_client = utf8mb4 */;
-/*!50001 CREATE VIEW `person_student` AS SELECT 
+/*!50001 CREATE VIEW `person_student` AS SELECT
  1 AS `person_id`,
  1 AS `person_name`,
  1 AS `person_email`,
