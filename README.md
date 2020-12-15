@@ -146,8 +146,8 @@ Depending on user needs, some tables in the database may need additional columns
 
 ## PPT Video
 
-A link to the PPT Video can be found here:
-[PowerPoint Video](https://youtube.com/)
+A link to a summary video discussing this project can be found here:
+[PowerPoint Video](https://drive.google.com/file/d/1FEht47HA9z6NZA96mk7K9-kOk5Tj_uBJ/view)
 
 ## Credits
 
@@ -158,3 +158,4 @@ This project is based on work originally created by the "Mavericks" team: Dhanan
 ## License
 
 This database is only to be used for educational and class purposes and can not be replicated or used for commercial purposes or private interests without permission by the Mavericks team. This database can not be extended for use in a new venture or for actual commercial use in the future without express permission from the team.
+
