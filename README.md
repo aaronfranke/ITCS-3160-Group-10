@@ -58,6 +58,12 @@ Note the cardinality shown in the diagram. The crows-foot notation shows that a 
 
 [Use Case SQL Statements](sql/UseCaseSQL.sql)
 
+#### Advanced Views
+
+[Average Driver Ratings](sql/avg_driver_ratings.sql)
+
+[Average Restaurant Ratings](sql/avg_restaurant_ratings.sql)
+
 ## Stored Procedure
 
 Database users who retrieve updated records daily or repeatedly throughout the week/month use stored procedures to simplify this task. Stored procedures are SQL code that is saved to a file and accessed via a call procedure. To execute the query, a user calls the procedure and specifies a parameter that the underlying SQL query then executes. Thereby, stored procedures allow users to save time and increase efficiency by eliminating the need to re-write SQL code.
@@ -122,13 +128,13 @@ The code used in this application can be found in this tutorial: [PHP MySQL CRUD
 
 Additional work needs to be done to create a secure and fully functional web application. Specifically, a PHP data object function should be added to all user input forms to mitigate the risk of SQL injection attacks.
 
-The web administration interface needs to be expanded to support managing other database tables. Currently the web application only supports CRUD functionality on the restaurant table.
+The web administration interface can be expanded to support managing additional database tables. Currently the web application only supports CRUD operations on the restaurant table.
 
 Depending on user needs, some tables in the database may need additional columns. For example, if a user wants to sort restaurants by zip code, the current database design will not allow for that because there is not a zip-code column in the restaurant table. It is important to note, however, that changes to the database schema should be based on well defined use case needs.
 
 ## MySQL Dump
 
-[Complete Database Dump](sql/Group10_Database_Dump.sql)
+[Complete Database Dump](sql/Group_10_Database_Dump20201215.sql)
 
 #### Screenshots of Populated Database Tables:
 [ratings table](screenshots/ratings.png) |
